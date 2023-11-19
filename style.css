@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    border: 2px solid rgb(116, 108, 60);
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    border: 2px solid lightgoldenrodyellow;
+    background-color: gainsboro;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card,
+.card2 {
+    display: flex;
+    gap: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: whitesmoke;
+    padding: 20px; /* Add padding to the cards */
+    border: 2px solid white; /* Add a border to the cards */
+    border-radius: 5px; /* Optional: Add border-radius for rounded corners */
+}
+.btn  {
+    background: none; /* Remove background */
+    border: none; /* Remove border */
+    font-size: 18px;
+    margin:none ;
+}
+.btn span {
+    color: red; /* Color for "1321" */
+}
+@media only screen and (max-width: 768px) {
+    .card,
+    .card2 {
+        flex-direction: column; /* Change the direction of the flex container to column */
+        gap: 20px; /* Reduce the gap between cards */
+    }
+}
